@@ -1,0 +1,100 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    float: left;
+    height: 600px;
+    width: 50%;
+}
+
+.flash {
+    background: red;
+}
+
+.footy-pitch {
+    background: #040634;
+}
+
+div {
+    margin: 0 auto;
+}
+
+.flash div {
+    background-image: linear-gradient(125deg, white 124px, transparent 124px, transparent 156px, white 156px),
+                        linear-gradient(white, white 30px, #ffdc00 30px, #ffdc00 170px, white 170px);
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+}
+
+.flash div:before,
+.flash div:after {
+    background-image: linear-gradient(107deg, transparent 80px, #ffdc00 80px, #ffdc00 120px);
+    content: '';
+    height: 280px;
+    position: absolute;
+
+    width: 57px;
+}
+
+.flash div:before {
+    left: 108px;
+    top: -185px;
+    transform: skew(-25deg);
+}
+
+.flash div:after {
+    left: 35px;
+    top: 105px;
+    transform: skew(-25deg) rotateZ(180deg);
+}
+
+.footy-pitch div {
+    background-image: linear-gradient(transparent, transparent 199px, white 199px, white 201px, transparent 201px),
+                        radial-gradient(circle, transparent, transparent 50px, white 50px, white 52px, transparent 52px),
+                        repeating-linear-gradient(to right, #3dac3d, #3dac3d 17px, #53e351 17px, #53e351 35px);
+
+    border: solid 2px white;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+}
+
+.footy-pitch div:before,
+.footy-pitch div:after {
+    border: solid 2px white;
+    content: '';
+    display: block;
+    height: 150px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 153px;
+}
+
+
+.footy-pitch div:before {
+    border-top: none;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    top: -90px;
+
+}
+
+.footy-pitch div:after {
+    border-bottom: none;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    bottom: -90px;
+}
