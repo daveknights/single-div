@@ -41,7 +41,6 @@ div {
     content: '';
     height: 280px;
     position: absolute;
-
     width: 57px;
 }
 
@@ -61,7 +60,6 @@ div {
     background-image: linear-gradient(transparent, transparent 199px, white 199px, white 201px, transparent 201px),
                         radial-gradient(circle, transparent, transparent 50px, white 50px, white 52px, transparent 52px),
                         repeating-linear-gradient(to right, #3dac3d, #3dac3d 17px, #53e351 17px, #53e351 35px);
-
     border: solid 2px white;
     height: 400px;
     overflow: hidden;
@@ -83,13 +81,11 @@ div {
     width: 153px;
 }
 
-
 .footy-pitch div:before {
     border-top: none;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
     top: -90px;
-
 }
 
 .footy-pitch div:after {
