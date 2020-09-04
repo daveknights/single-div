@@ -30,6 +30,12 @@ section {
     background: #a7bbc3;
 }
 
+.bobert {
+    background: grey;
+    position: relative;
+    z-index: 0;
+}
+
 div {
     margin: 0 auto;
 }
@@ -141,4 +147,90 @@ div {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 60px;
+}
+
+.bobert div {
+    background-color: white;
+    background-image: radial-gradient(circle at 200px 150px, transparent, transparent 70px, black 71px, black 79px, transparent 80px),
+    radial-gradient(5px 7px at 150px 125px, white, white 5px, transparent 7px),
+    radial-gradient(circle at 200px 150px, #acb8c8, #9aa0c2 70px, transparent 72px),
+    linear-gradient(to right, transparent, transparent 60px, black 62px, black 72px, transparent 72px),
+    radial-gradient(8px 4px at 100px 207px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 105px 207px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 110px 207px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 115px 207px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 120px 207px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 100px 220px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 105px 220px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 110px 220px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 115px 220px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px),
+    radial-gradient(8px 4px at 120px 220px, #f1ea1d, #f1ea1d 8px, rgba(255,255,255,0) 10px);
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: inset -10px -10px 50px #777;
+    height: 250px;
+    width: 300px;
+    z-index: 1;
+}
+
+.bobert div:before {
+    background: black;
+    border-radius: 35px;
+    box-shadow: -1px -10px 15px rgba(0,0,0,0.2);
+    content: '';
+    display: block;
+    height: 130px;
+    position: absolute;
+    right: 50%;
+    top: 185px;
+    transform: translateX(95px);
+    width: 70px;
+    z-index: 1;
+}
+
+.bobert div:after {
+    background-image: radial-gradient(circle at 340px 282px, grey, grey 10px, transparent 10px),
+    radial-gradient(circle at 310px 279px, #444, #444 5px, #181b23 6px, #181b23 7px, transparent 8px),
+    radial-gradient(7px 12px at 325px 282px, transparent, transparent 9px, #444 10px, #444 11px, #555 12px, #555 17px, transparent 18px),
+    radial-gradient(circle at 0 282px, grey, grey 10px, transparent 10px),
+    radial-gradient(circle at 30px 279px, #444, #444 5px, #181b23 6px, #181b23 7px, transparent 8px),
+    radial-gradient(7px 12px at 15px 282px, transparent, transparent 9px, #444 10px, #444 11px, #555 12px, #555 17px, transparent 18px),
+                        radial-gradient(15px 7px at 140px 320px, black, black 12px, transparent 14px),
+                        radial-gradient(15px 7px at 150px 320px, black, black 12px, transparent 14px),
+                        radial-gradient(15px 7px at 160px 320px, black, black 12px, transparent 14px),
+                        radial-gradient(15px 7px at 170px 320px, black, black 12px, transparent 14px),
+                        radial-gradient(15px 7px at 180px 320px, black, black 12px, transparent 14px),
+                        radial-gradient(15px 7px at 190px 320px, black, black 12px, transparent 14px),
+                        radial-gradient(15px 7px at 200px 320px, black, black 12px, transparent 14px),
+                        radial-gradient(15px 7px at 140px 317px, grey, grey 12px, rgba(80,80,80,0) 14px),
+                        radial-gradient(15px 7px at 150px 317px, grey, grey 12px, rgba(80,80,80,0) 14px),
+                        radial-gradient(15px 7px at 160px 317px, grey, grey 12px, rgba(80,80,80,0) 14px),
+                        radial-gradient(15px 7px at 170px 317px, grey, grey 12px, rgba(80,80,80,0) 14px),
+                        radial-gradient(15px 7px at 180px 317px, grey, grey 12px, rgba(80,80,80,0) 14px),
+                        radial-gradient(15px 7px at 190px 317px, grey, grey 12px, rgba(80,80,80,0) 14px),
+                        radial-gradient(15px 7px at 200px 317px, grey, grey 12px, rgba(80,80,80,0) 14px),
+                        radial-gradient(15px 35px at 22px 145px, black, black 15px, transparent 16px),
+                        radial-gradient(15px 35px at 318px 145px, black, black 15px, transparent 16px),
+                        radial-gradient(circle at 312px 280px, #181b23, #181b23 11px, transparent 12px),
+                        radial-gradient(circle at 29px 280px, #181b23, #181b23 11px, transparent 12px),
+                        linear-gradient(to right, transparent, transparent 130px, #e1e2e5 130px, #aeafb4 180px, #86878c 195px, #a0a3aa 205px, #9da0a9 210px, transparent 210px),
+                        radial-gradient(500px 200px at 170px 360px, grey, grey 223px, rgba(80,80,80,0) 225px),
+                        radial-gradient(500px 200px at 170px 360px, rgba(80,80,80,0), rgba(80,80,80,0) 268px, grey 270px),
+                        linear-gradient(to right, transparent, transparent 24px, #181b23 24px,#181b23 42px, #474c59 42px, #474c59 46px,
+                        #181b23 46px,#181b23 64px, #474c59 64px, #474c59 68px, #181b23 68px,#181b23 86px, #474c59 86px, #474c59 90px,
+                        #181b23 90px,#181b23 108px, #474c59 108px, #474c59 112px, #181b23 112px, #181b23 130px, transparent 130px,
+                        transparent 210px, #181b23 210px, #181b23 231px, #474c59 231px, #474c59 235px, #181b23 235px, #181b23 253px,
+                        #474c59 253px, #474c59 257px, #181b23 257px, #181b23 275px, #474c59 275px, #474c59 279px,
+                        #181b23 279px, #181b23 297px, #474c59 297px, #474c59 301px, #181b23 301px,#181b23 319px, transparent 319px);
+    content: '';
+    display: block;
+    height: 350px;
+    left: 50%;
+    position: absolute;
+    top: 105px;
+    transform: translateX(-50%);
+    width: 340px;
+    z-index: -1;
 }
